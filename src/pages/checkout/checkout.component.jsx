@@ -34,8 +34,8 @@ const CheckoutPage = ({ cartItems, total }) => (
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <div className='total'>TOTAL: ${total}</div>
-    <StripeCheckoutButton price={total} />
+    <div className='total'>TOTAL: ${total.toFixed(2)}</div>
+    <StripeCheckoutButton price={total.toFixed(2)} />
   </div>
 );
 
