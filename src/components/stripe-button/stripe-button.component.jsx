@@ -16,7 +16,7 @@ const StripeCheckoutButton = ({ price }) => {
             name='J Bakes'
             billingAddress
             shippingAddress
-            image='https://www.flaticon.com/svg/vstatic/svg/4080/4080458.svg?token=exp=1612326012~hmac=0b69a13c275bd2f9189f17cfbad1b3b5'
+            image='/images/croissant.png'
             description={`Your total is $${price}`}
             currency='SGD'
             amount={priceForStripe}
