@@ -2,12 +2,13 @@ import React from 'react';
 
 import ContactUs from '../../components/contact-us/contact-us.component';
 
-import './contact.styles.scss';
+import './contact.styles';
+import { ContactContainer } from './contact.styles';
 
 const ContactUsPage = () => (
-  <div className='contact-us'>
+  <ContactContainer>
     <ContactUs />
-  </div>
+  </ContactContainer>
 );
 
 export default ContactUsPage;
